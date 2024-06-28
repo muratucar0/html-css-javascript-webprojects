@@ -1,0 +1,146 @@
+ section{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   text-transform: uppercase;
+ }
+ 
+
+ body{
+  margin: 0;
+ }
+
+section#home{
+   background-image: url('https://plus.unsplash.com/premium_photo-1680721445172-e34cb0e8ebf3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80');;
+}
+
+ section#about{
+  background-color: red;
+ }
+ section#services{
+  background-color: green;
+ }
+
+ section#prices{
+  background-color: orange;
+ }
+
+ section#contact{
+  background-color: gray;
+ }
+
+
+  /* Navbar*/
+
+  .overlay{
+    position: fixed;
+    width: 100vw;
+    z-index: 9; 
+    transform: translateX(-100vw);
+    
+    
+  }
+
+  .transformNav{
+    transform: translateX(0);
+    transition: 0.8s;
+  }
+
+  nav ul{
+    list-style: none;
+     margin: 0px;
+     padding: 0px;
+     height: 100vh;
+
+  }
+  nav li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  nav ul li{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav li:nth-of-type(1){
+     background-color: blue;
+  }
+  nav li:nth-of-type(2){
+           background-color: red;
+  }
+  nav li:nth-of-type(3){
+    background-color: green;
+}
+nav li:nth-of-type(4){
+  background-color:  orange;
+}
+nav li:nth-of-type(5){
+  background-color: gray;
+}
+
+
+ /*Icon*/
+ .menu-bars {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  top: 17px;
+  right: 30px;
+  z-index: 11;
+}
+ 
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.8s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+
+.slide-in-1{
+   animation: slide-in 0.5s linear 0.1s both;
+}
+.slide-in-2{
+  animation: slide-in 0.5s linear 0.2s both;
+}
+.slide-in-3{
+  animation: slide-in 0.5s linear 0.3s both;
+}
+.slide-in-4{
+  animation: slide-in 0.5s linear 0.4s both;
+}
+.slide-in-5{
+  animation: slide-in 0.5s linear 0.5s both;
+}
+
+@keyframes slide-in{
+   from{
+    transform: translateX(-100%);
+   }
+   to{
+     transform: translateX(0);
+   }
+
+}

@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+     
+    <div class="mainDiv">
+        <h1 class="title">Kayıt Formu</h1>
+        <form id="form" >
+            <div class="form_group">
+                <label for="name">Ad</label>
+                <input type="text"   name="name" id="name" placeholder="Adnızı Giriniz..." 
+                     minlength="5"
+                     maxlength="20"
+                   required
+                >
+            </div>
+            <div class="form_group">
+                <label for="surname">Soyad</label>
+                <input type="text"  name="surname" id="surname" placeholder="Soyadınızı Giriniz " 
+                minlength="3"
+                maxlength="20"
+                required
+                >
+            </div>
+            <div class="form_group">
+                <label for="email">Email Adresi</label>
+                <input type="email"  name="email" id="email" placeholder="example@gmail.com" 
+                
+                
+                required>
+            </div>
+            <div class="form_group">
+                <label for="phone">Telefon Numarası</label>
+                <input type="tel"  name="phone" id="phone" 
+                placeholder="555-555-5555"
+                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required>                
+            </div>
+            <div class="form_group">
+                <label for="password">Şifre</label>
+                <input type="password"  name="password" id="password"  
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                required
+                >
+            </div>
+            <div class="form_group">
+                <label for="repassword">Şifre Tekrar</label>
+                <input type="password"  name="repassword" id="repassword" 
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                required>
+            </div>
+            <div class="form_group">
+                <label for="address">Adres</label>
+                <textarea type="text"  rows="5" name="address" id="address" placeholder="Adres Giriniz"  
+                required
+                ></textarea>
+            </div>
+            <button type="submit">Kaydol</button>
+        
+
+        </form>
+        <div class="alertMessage">
+            <h3 id="alertTitle">Lütfen Tüm Alanları Doldurunuz</h3>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+
+</html>

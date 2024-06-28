@@ -1,0 +1,11 @@
+#cardTitle{
+   letter-spacing: 4px;  
+   text-transform: uppercase;
+}
+
+.icon:hover {
+    color: red !important;
+    font-size: 40px;
+    cursor: pointer;
+}
+ 
